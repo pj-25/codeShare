@@ -1,0 +1,61 @@
+.music-background{
+    background: url("musicbg5.jpg") no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: Langar;
+    color: #1c0d36;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 440px;
+    font-family: 'Nova Flat';
+    align-content: space-around;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+.front{
+    z-index: 2;
+    border-radius: 25%;
+    background-color: rgb(0, 123, 254);
+    color: orange;
+}
+
+.back{
+    transform: rotateY(180deg);
+    z-index: 1;
+    border-radius: 25%;
+    background-color: orange;
+    color: rgb(0, 123, 254);
+
+}
+
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.card{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    backface-visibility: hidden;
+}
